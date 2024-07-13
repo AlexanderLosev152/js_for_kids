@@ -72,3 +72,14 @@ console.log(`${hello} ${world} !!!`);
 
 let str = "эЙ, кАК деЛа?";
 console.log(str[0].toUpperCase() + str.slice(1).toLowerCase());
+
+// ----------------
+
+let hadShower = true;
+let hasBackpack = false;
+console.log(hadShower && hasBackpack);
+console.log(hadShower || hasBackpack);
+
+const height = 155;
+const heightRestriction = 150;
+console.log(height > heightRestriction);
