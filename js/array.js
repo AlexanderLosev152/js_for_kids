@@ -74,3 +74,36 @@ landmarks.pop("Моя быышая школа");
 landmarks.pop("Приют для кошек");
 
 console.log(landmarks);
+
+// Случайный выбор
+
+console.log(Math.floor(Math.random() * 5));
+
+// const randomWords = ["Взрыв", "Пещера", "Принцесса", "Карандаш"];
+// const randomIndex = Math.floor(Math.random() * 4);
+// console.log(randomWords[randomIndex]);
+
+const phrases = [
+  "Звучит неплохо",
+  "Да, это определенно надо сделать",
+  "Не думаю, что это хорошая идея",
+  "Может, не сегодня?",
+  "Компьютер говорит нет",
+];
+
+const random = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+};
+
+const randomBodyParts = ["глаз", "нос", "череп"];
+const randomAdjectives = ["вонючая", "унылая", "дурацкая"];
+const randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+
+const rbp = random(randomBodyParts);
+const rA = random(randomAdjectives);
+const rW = random(randomWords);
+
+console.log(rbp + " " + rA + " " + rW);
+console.log([rbp, rA, rW].join(" "));
